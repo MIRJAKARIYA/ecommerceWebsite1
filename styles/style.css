@@ -91,7 +91,12 @@ div.item_container{
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,300px);
 }
 div.item_container>.price>.up>img{
     width: 100%;
+    height: 160px;
+}
+div.item_container>.price{
+    border: 1px solid black;
 }
