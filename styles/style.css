@@ -19,6 +19,20 @@ body{
     box-shadow: 1px 1px 4px rgba(0, 0, 255, 0.527);
 
 }
+body::-webkit-scrollbar{
+    width: 10px;
+
+}
+body::-webkit-scrollbar-track{
+    color: gray;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(128, 128, 128, 0.692);
+}
 
 /*------ header styling ------*/
 header{
