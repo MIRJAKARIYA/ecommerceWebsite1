@@ -212,6 +212,7 @@ div.down_info{
     }
     div.main_image{
         height: 500px;
+        width: 100%;
     }
     header>nav{
         display: grid;
@@ -253,15 +254,15 @@ div.down_info{
         padding-bottom: 10px;
     }
     header>nav{
-        background-color: rgba(255, 0, 0, 0.425);
+        background-color: rgba(129, 143, 6, 0.5);
     }
     header>nav>.navigation div>a{
-        color:indigo;
-        font-weight: 600;
+        color:black;
+        font-weight: 900;
     }
     header>nav>.info>div>a{
-        color: indigo;
-        font-weight: 600;
+        color:black;
+        font-weight: 900;
     }
     header>nav>.info{
         margin-top: -50px;
