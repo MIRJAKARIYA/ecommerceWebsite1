@@ -125,6 +125,11 @@ div.item_container .price>.up>img{
 }
 div.item_container>.price{
     background-color: white;
+    transition: 1s;
+}
+div.item_container>.price:hover{
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 10px black;
 }
 div.item_container>.price>.down>span{
     display: inline-block;
@@ -154,9 +159,89 @@ div.down_info{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
     transition: 0.3s;
+    cursor: pointer;
 }
 .showmore:hover{
     background-color: green;
     color: white;
 }
 /*--------------- media queries for laptops,tabs -------------*/
+@media only screen and (max-width:900px){
+    section.header_down{
+        row-gap: 20px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    div.item_container{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media only screen and (max-width:700px){
+    section.header_down{
+        width: 100%;
+        row-gap: 20px;
+        grid-template-columns: repeat(2,1fr);
+    }
+    div.item_container{
+        width: 100%;
+        grid-template-columns: repeat(3,1fr);
+    }
+    div.main_image{
+        height: 500px;
+    }
+    header>nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        gap: 10px;
+    }
+    header{
+        width:100%;
+    }
+    header>nav .navigation{
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    header>nav .info{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+@media only screen and (max-width:550px){
+    section.header_down{
+        row-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    div.item_container{
+        grid-template-columns: 1fr;
+    }
+    div.main_image{
+        height: 300px;
+    }
+    header>nav .navigation{
+        flex-direction: column;
+        align-items: center;
+    }
+    header>nav .navigation>div{
+        padding-bottom: 10px;
+    }
+    header>nav{
+        background-color: rgba(255, 0, 0, 0.342);
+    }
+    header>nav>.navigation div>a{
+        color:indigo;
+        font-weight: 600;
+    }
+    header>nav>.info>div>a{
+        color: indigo;
+        font-weight: 600;
+    }
+    header>nav>.info{
+        margin-top: -50px;
+    }
+
+}
+
+
