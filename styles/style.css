@@ -77,3 +77,21 @@ section.header_down img{
    border-radius: 10px;
 }
 /*------------------ recently sold items ---------------*/
+section.recently_sold{
+    width: 90%;
+    border: 1px solid black;
+    margin: 0px auto;
+    max-width: 1100px;
+}
+section.recently_sold>h1{
+    text-align: center;
+}
+div.item_container{
+    border: 1px solid black;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(5,1fr);
+}
+div.item_container>.price>.up>img{
+    width: 100%;
+}
